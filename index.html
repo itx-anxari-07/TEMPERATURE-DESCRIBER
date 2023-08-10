@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Temperature Descriptor</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <h1>Temperature Descriptor</h1>
+    <div class="container">
+        <label for="temperature" class="label">Enter Temperature: </label>
+        <div class="input-group">
+            <input type="number" id="temperature" step="0.01">
+            <select id="unit">
+                <option value="celsius">Celsius</option>
+                <option value="fahrenheit">Fahrenheit</option>
+            </select>
+        </div>
+        <button onclick="describeTemperature()" class="button">Describe</button>
+        <div class="result-container">
+            <p class="result" id="description"></p>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

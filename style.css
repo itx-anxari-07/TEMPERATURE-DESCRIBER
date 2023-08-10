@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #FF6B6B, #efc051, #06D6A0, #118AB2);
+    background-size: 400% 400%;
+    animation: gradient 15s infinite alternate;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0 50%;
+    }
+
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #666;
+}
+
+.input-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.input-group input,
+.input-group select,
+.input-group button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.input-group select {
+    flex: 0.3;
+    margin-left: 10px;
+}
+
+.button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.button:hover {
+    background-color: #222;
+    transform: scale(1.05);
+}
+
+.result-container {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.result {
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+}
+
+.extremely-cold {
+    background-color: #00bfff;
+}
+
+.very-cold {
+    background-color: #66ccff;
+}
+
+.cold {
+    background-color: #99ccff;
+}
+
+.moderate {
+    background-color: #ffcc66;
+}
+
+.warm {
+    background-color: #ff9900;
+}
+
+.hot {
+    background-color: #ff6600;
+}
+
+.very-hot {
+    background-color: #ff3300;
+}
+
+.extremely-hot {
+    background-color: #cc0000;
+}
+
+.button:hover {
+    filter: brightness(90%);
+}
